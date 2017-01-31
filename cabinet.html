@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="François SIMITCHIEV">
-    <title>Latitia Cros</title>
+    <title>Latitia Cros - Cabinet</title>
 
     <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!--**** FAVICON ****-->
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="dist/css/animate.min.css"
+    <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
-<body>
+<body class="animated fadeIn">
 
     <!--**** HEADER ****-->
     <header>
@@ -25,14 +26,22 @@
         <!--**** MAIN NAV ****-->
         <nav id="main-nav">
 
+            <!--**** CAROUSEL ****-->
+            <!--<div id="carousel" class="carousel">-->
+                <!--<div><img src="dist/img/paris.jpg"></div>-->
+                <!--<div><img src="dist/img/tour-eiffel.jpg"></div>-->
+                <!--<div><img src="dist/img/bibliotheque.jpg"></div>-->
+            <!--</div> &lt;!&ndash; End: carousel &ndash;&gt;-->
+
+
             <ul>
-                <li><a href="#"><img src="dist/img/laetitia-cros-logo.jpg"> </a> </li>
-                <li><a href="#">cabinet</a> </li>
-                <li><a href="#">droit de la famille</a> </li>
-                <li><a href="#">droit de la santé</a> </li>
-                <li><a href="#">droit des contrats</a> </li>
-                <li><a href="#">honoraires</a> </li>
-                <li><a href="#">contact</a> </li>
+                <li><a href="index.html"><img id="logo" src="dist/img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"> </a> </li>
+                <li><a class="active" href="cabinet.html">cabinet</a> </li>
+                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
+                <li><a href="droit-des-contrats.html">droit des contrats</a> </li>
+                <li><a href="honoraires.html">honoraires</a> </li>
+                <li><a href="contact.html">contact</a> </li>
             </ul>
 
         </nav>
@@ -40,16 +49,18 @@
     </header>
 
     <!--**** MAIN CONTENT ****-->
-    <main>
+    <main id="cabinet">
 
         <!--**** PRESENTATION ****-->
         <section>
 
+            <img src="dist/img/laetitia-cros.jpg">
+
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae venenatis odio. Nunc consectetur nisi vitae leo tincidunt, quis luctus ex pretium. Donec dignissim ac purus pulvinar varius. Nunc auctor lacinia odio, vitae feugiat justo. Cras consectetur maximus est eu vestibulum. Duis at maximus arcu. Cras convallis enim vulputate, sodales mauris vel, congue arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae venenatis odio. Nunc consectetur nisi vitae leo tincidunt, quis luctus ex pretium. Donec dignissim ac purus pulvinar varius. Nunc auctor lacinia odio, vitae feugiat justo. Cras consectetur maximus est eu vestibulum. Duis at maximus arcu. Cras convallis enim vulputate, sodales mauris vel, congue arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+                Integer vulputate nisl in sodales vulputate. Nulla facilisi. Duis et vehicula ipsum, ut sodales dolor. Quisque pellentesque in elit ac hendrerit. Vivamus tincidunt odio quis neque tempor, sit amet iaculis leo finibus. Ut tempor imperdiet sem, eu pulvinar eros aliquam lacinia. Maecenas eleifend leo nisl, sollicitudin ornare orci dictum vitae. Integer et purus velit. Sed imperdiet posuere elementum. Aliquam condimentum sem vel iaculis aliquam. Praesent ac molestie purus. Nunc a convallis ex, quis viverra enim.
             </p>
 
-            <img src="dist/img/laetitia-cros.jpg">
 
         </section> <!-- End: presentation -->
 
@@ -58,11 +69,13 @@
 
     <!--**** FOOTER ****-->
     <footer>
-
     </footer>
+
 <!--**** SCRIPTS ****-->
 <script src="js/jquery.slim.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+
 
 </body>
 </html>
