@@ -10,6 +10,9 @@ $(document).ready(function(){
         pauseOnHover: false,
     });
 
-
+    // **** ACCORDION ****
+    $('.accordion').accordion({
+        "transitionSpeed": 400
+    });
 
 });

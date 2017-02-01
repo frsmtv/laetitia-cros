@@ -1,7 +1,9 @@
+@import "partials/intro";
 @import "partials/header";
 @import "partials/mixins";
 @import "partials/contact";
 @import "partials/slick";
+@import "partials/accordion";
 
 html, body {
   width: 100%;
@@ -37,10 +39,9 @@ a.active {
 }
 
 ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: block;
-  margin: auto;
 }
 
 h3 {

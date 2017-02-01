@@ -1,0 +1,14 @@
+.accordion {
+  div {
+    padding: 0;
+  }
+  a {
+    font-size: 1.2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  embed {
+    width: 100%;
+  }
+}

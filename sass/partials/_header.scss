@@ -4,6 +4,7 @@ header {
   padding: 2% 0;
 
   nav {
+    z-index: 10000;
     position: fixed;
     width: 100%;
     background: rgba(255, 255, 255, 0.96);
@@ -22,7 +23,7 @@ header {
       color: $navColor;
       #logo {
         width: 80px;
-        filter: grayscale(100%);
+        //filter: grayscale(100%);
 
         -webkit-transition: all 400ms ease-in;
         -moz-transition: all 400ms ease-in;
