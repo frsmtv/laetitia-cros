@@ -17,7 +17,7 @@ gulp.task('browser-sync', function(){
     port: 3000,
     server :{
       baseDir: "./", // base directory
-      index: "index.html" // fichier à lancer par défaut
+      index: "cabinet.html" // fichier à lancer par défaut
     }
   })
 });

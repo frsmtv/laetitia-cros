@@ -49,6 +49,11 @@ h3 {
 }
 h4 {
   letter-spacing: 2px;
+  text-transform: uppercase;
+  span {
+    font-size: 1rem;
+    text-transform: none;
+  }
 }
 
 main {
@@ -56,12 +61,13 @@ main {
   section {
     width: 95%;
     display: block;
-    margin: auto;
+    margin: 0 auto 5%;
     text-align: justify;
     img {
       width: 40%;
       float: right;
       padding-top: 10px;
+      filter: grayscale(100%);
     }
     p {
       width: 55%;

@@ -3,8 +3,12 @@
 #contact {
   text-align: center;
   #map-wrapper {
-    margin-top: 4%;
+    margin-top: 5%;
     width: 100%;
+    filter: grayscale(100%);
+    iframe {
+      width: 100%;
+    }
   }
 }
 
