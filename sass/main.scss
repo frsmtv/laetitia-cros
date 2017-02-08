@@ -4,6 +4,9 @@
 @import "partials/contact";
 @import "partials/slick";
 @import "partials/accordion";
+@import "partials/footer";
+
+
 
 html, body {
   width: 100%;
@@ -55,6 +58,9 @@ h4 {
     font-size: 1rem;
     text-transform: none;
   }
+}
+h2, h3 {
+  color: $navColor;
 }
 
 main {
