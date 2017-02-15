@@ -3,6 +3,15 @@
 #contact {
   text-align: center;
   color: $mainColor!important;
+  h3, h4 {
+    margin: 0;
+  }
+  h4 {
+    margin-bottom: 2%;
+  }
+  ul {
+    margin-bottom: 2%;
+  }
   #map-wrapper {
     margin-top: 5%;
     margin-left: auto;
