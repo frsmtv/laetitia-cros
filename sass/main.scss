@@ -9,8 +9,9 @@
 
 
 html, body {
-  width: 100%;
-  margin: 0;
+  // width: 100vw;
+  max-width: 1280px;
+  margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
@@ -64,7 +65,7 @@ h2, h3 {
 }
 
 main {
-  margin-top: 10%;
+  margin-top: -20px;
   section {
     width: 95%;
     display: block;

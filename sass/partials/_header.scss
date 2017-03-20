@@ -2,16 +2,14 @@
 
 header {
   padding: 2% 0;
-
   nav {
     z-index: 10000;
-    position: fixed;
     width: 100%;
     background: rgba(255, 255, 255, 0.96);
-    top: 0;
     padding-top: 1%;
     ul {
-      width: 95%;
+      width: 100%;
+      padding: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -23,8 +21,6 @@ header {
       color: $navColor;
       #logo {
         width: 80px;
-        //filter: grayscale(100%);
-
         -webkit-transition: all 400ms ease-in;
         -moz-transition: all 400ms ease-in;
         -ms-transition: all 400ms ease-in;
