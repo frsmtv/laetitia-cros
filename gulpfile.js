@@ -17,7 +17,7 @@ gulp.task('browser-sync', function(){
     port: 3000,
     server :{
       baseDir: "./", // base directory
-      index: "cabinet.html" // fichier à lancer par défaut
+      index: "index.html" // fichier à lancer par défaut
     }
   })
 });
@@ -39,14 +39,14 @@ gulp.task('html', function(){
 
 gulp.task('css', function(){
   console.log('Ma tâche pour la css');
-  return gulp.src('./css/**/*.css') // choisir fichiers css
+  return gulp.src('/css/**/*.css') // choisir fichiers css
   .pipe(autoprefixer({
           browsers: ['last 2 versions'],
           cascade: false
       }))
   .pipe(concatCss("bundle.css")) // concaténation de tous les fichiers css en un seul
     .pipe(minifyCss()) // compresser css
-    .pipe(gulp.dest('dist/css/')) // permet d'envoyer le fichier minifié dans le rép dist/css
+    .pipe(gulp.dest('css/')) // permet d'envoyer le fichier minifié dans le rép dist/css
     .pipe(notify("CSS compréssée et concaténée !")) // Envoie une notif quand la css est modifiée
 
     .pipe(reload({stream:true, once:true})); // permet de re-sync le browser
@@ -63,7 +63,7 @@ gulp.task('sass', function(){
       }))
   .pipe(concat("bundle-sass.css")) // concaténation de tous les fichiers sass en un seul
     .pipe(minifyCss()) // compresser css
-    .pipe(gulp.dest('dist/css/')) // permet d'envoyer le fichier minifié dans le rép dist/css
+    .pipe(gulp.dest('css/')) // permet d'envoyer le fichier minifié dans le rép dist/css
     .pipe(notify("SASS compilée compréssée et concaténée !")) // Envoie une notif quand la css est modifiée
     .pipe(reload({stream:true, once:true })); // permet de re-sync le browser
 });

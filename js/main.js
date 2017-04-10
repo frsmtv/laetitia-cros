@@ -15,4 +15,14 @@ $(document).ready(function(){
         "transitionSpeed": 400
     });
 
+    // GMAPS POINTER EVENTS ACTIVATION
+    $('iframe').click(function () {
+        console.log('coucou');
+        $('iframe').css("pointer-events", "auto");
+    });
+
+    $( "iframe" ).mouseleave(function() {
+        $('iframe').css("pointer-events", "none");
+    });
+
 });
