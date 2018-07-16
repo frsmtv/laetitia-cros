@@ -1,14 +1,40 @@
+.section-title {
+  display: table;
+  background: $navColor;
+  color: white;
+  padding: 10px;
+  margin: 40px 0;
+}
 .accordion {
+  margin-bottom: 20px;
   div {
     padding: 0;
   }
   a {
     font-size: 1.2rem;
+    padding-bottom: 5px;
     &:hover {
       cursor: pointer;
+      color: $navColor;
+      border-bottom: 1px solid $navColor;
     }
-  }
+  }  
   embed {
     width: 100%;
+  }
+  p {
+    i {
+      color: inherit;
+    }
+  }
+  ul {
+    margin: 0;
+    li {
+      display: list-item;
+      margin: 20px 0;
+      &:before {
+        content: "● ";
+      }
+    }
   }
 }

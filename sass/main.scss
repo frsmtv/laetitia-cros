@@ -67,19 +67,34 @@ h2, h3 {
 main {
   margin-top: -20px;
   section {
-    width: 95%;
+    width: 50%;
     display: block;
     margin: 0 auto 5%;
     text-align: justify;
     color: $mainColor;
     img {
-      width: 40%;
-      float: right;
+      width: 50%;
       padding-top: 10px;
       filter: grayscale(100%);
+      -webkit-transition: all 400ms ease-in;
+      -moz-transition: all 400ms ease-in;
+      -ms-transition: all 400ms ease-in;
+      -o-transition: all 400ms ease-in;
+      transition: all 400ms ease-in;
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 60px;
     }
     p {
-      width: 55%;
+      // width: 50%;
+      i {
+        color: $navColor;
+        font-weight: bold;
+      }
     }
   }
 }
