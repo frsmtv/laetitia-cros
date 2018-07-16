@@ -18,9 +18,14 @@
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
-<body class="animated fadeIn">
+<body>
 
-  <!--**** CAROUSEL ****-->
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+
+    <!--**** CAROUSEL ****-->
     <div id="carousel" class="carousel">
         <div><img src="img/lyon-pano.jpg"></div>
     </div> <!-- End: carousel -->
@@ -69,13 +74,22 @@
 
 <!--**** FOOTER ****-->
 <footer>
-    © 2017 | Coded by François Simitchiev
+    © 2017 | Site par François Simitchiev
 </footer>
 
 <!--**** SCRIPTS ****-->
-<script src="js/jquery.slim.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
+
+<!-- Preloader  -->
+<script>
+$(window).on('load', function() { // makes sure the whole site is loaded 
+    $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(500).css({'overflow':'visible'});
+});
+</script>
 
 
 </body>
