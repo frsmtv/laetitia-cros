@@ -1,9 +1,10 @@
 @import "mixins";
 
 #contact {
+  width: 100%;
   margin-top: 5vh;
   text-align: center;
-  color: $mainColor!important;
+  // color: $mainColor!important;
   h3, h4 {
     margin: 0;
   }

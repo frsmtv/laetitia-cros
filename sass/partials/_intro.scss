@@ -4,4 +4,27 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); /* Yep! */
+  a {
+  	border-bottom: none;
+    img {
+      filter: none;
+    }
+    &:hover {
+  		border-bottom: none;
+  		opacity: .8;
+  	}
+  }
+  h1 {
+    line-height: 1.8;
+    letter-spacing: 2px;
+    color: $navColor;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    span {
+      display: block;
+      &:last-child {
+        font-size: 70%;
+      }
+    }
+  }
 }

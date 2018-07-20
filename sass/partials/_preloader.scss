@@ -1,13 +1,20 @@
+@import "mixins";
+
 #preloader {
   position: fixed;
-  top: 0;
+  // top: 0;
+  height: 100vh;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff!important;
+  // background-color: #fff!important;
+  background: $navColor;
   /* change if the mask should have another color then white */
   z-index: 99;
   /* makes sure it stays on top */
+  &.hide {
+    bottom: -100vh;
+  }
 }
 
 #status {
@@ -17,7 +24,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-image: url(../img/loading.png);
+  background-image: url(../img/loading2.png);
   background-position: center center;
   /* path to your loading animation */
   background-repeat: no-repeat;

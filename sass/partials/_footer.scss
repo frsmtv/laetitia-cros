@@ -1,5 +1,45 @@
 footer {
-  text-align: center;
-  font-size: .7rem;
-  margin: 3% 0;
+	background: $navColor;
+	color: white;
+	margin-top: 15vh;
+	padding: 0 40px;
+	text-align: center;
+	font-size: .7rem;
+	vertical-align: middle;
+	a {
+		border-bottom: none!important;
+		text-transform: uppercase;
+		&:hover {
+			border-bottom: none!important;
+		}
+	}
+	nav {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.logo-footer {
+			img {
+				width: 50px;
+			}
+			span {
+				display: block;
+			}
+		}
+		a {
+			&:hover {
+				color: white;
+			}
+		}
+		ul {
+			padding: 40px 0;
+			text-align: right;
+			line-height: 2;
+			margin: 0;
+			li:last-child {
+				font-size: 80%;
+				text-transform: uppercase;
+			}
+		}
+	}
 }

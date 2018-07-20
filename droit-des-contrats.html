@@ -9,7 +9,7 @@
     <title>Latitia Cros - Droit des contrats</title>
 
     <!--**** FONTS ****-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <!--**** FAVICON ****-->
 
@@ -25,40 +25,79 @@
         <div><img src="img/lyon-pano.jpg"></div>
     </div> <!-- End: carousel -->
 
-<!--**** HEADER ****-->
-<header>
+    <!--**** HEADER ****-->
+    <header>
 
-    <!--**** MAIN NAV ****-->
-    <nav id="main-nav">
+        <!--**** MAIN NAV ****-->
+        <nav id="main-nav">
 
-        <ul>
-            <li><a href="index.html"><img id="logo" src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a>  </li>
-            <li><a href="cabinet.html">le cabinet</a> </li>
-            <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-            <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-            <li><a class="active" href="droit-des-contrats.html">droit des contrats</a> </li>
-            <li><a href="honoraires.html">honoraires</a> </li>
-            <li><a href="contact.html">contact</a> </li>
-        </ul>
+            <ul>
+                <li><a href="index.html"><img id="logo" src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a>  </li>
+                <li><a href="cabinet.html">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
+                <li><a class="active" href="droit-des-contrats.html">droit des contrats</a> </li>
+                <li><a href="honoraires.html">honoraires</a> </li>
+                <li><a href="contact.html">contact</a> </li>
+            </ul>
 
-    </nav>
+        </nav>
 
-</header>
+    </header>
 
-<!--**** MAIN CONTENT ****-->
-<main id="droit-contrats">
+    <!--**** MAIN CONTENT ****-->
+    <main>
 
-</main>
+    </main>
 
-<!--**** FOOTER ****-->
-<footer>
-</footer>
+    <footer>
+
+        <nav>
+
+            <a class="logo-footer" href="/">
+
+                <img src="img/loading2.png" alt="laetitia cros - Avocat à la cour logo">
+
+                <span>Laetitia Cros</span>
+                <span>Avocat à la Cour</span>
+                
+            </a>
+            
+            <ul>                
+                <li><a href="cabinet.html">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
+                <li><a href="honoraires.html">honoraires</a> </li>
+                <li><a href="contact.html">contact</a> </li>
+                <li>﹏﹏﹏﹏</li>
+                <li>© <span id="year"></span> | Site par <a href="https://fsimitchiev.com/webcreatif" target="_blank">François Simitchiev</a></li>
+            </ul>
+
+        </nav>        
+
+    </footer>
 
 <!--**** SCRIPTS ****-->
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/main.js"></script>
 
+<!-- Preloader  -->
+<script>
+$(window).on('load', function() { // makes sure the whole site is loaded 
+    $('#status').fadeOut(); // will first fade out the loading animation 
+    $('#preloader').delay(500).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+    $('body').delay(500).css({'overflow':'visible'});
+});
+</script>
+
+<!-- Current year -->
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+    $("#year").html(year);
+    
+</script>
 
 </body>
 </html>

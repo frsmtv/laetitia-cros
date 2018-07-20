@@ -9,7 +9,7 @@
     <title>Latitia Cros - Cabinet</title>
 
     <!--**** FONTS ****-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
     <!--**** FAVICON ****-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,7 +36,7 @@
         <nav id="main-nav">
 
             <ul>
-                <li><a id="logo" href="index.html"><img src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a>  </li>
+                <li><a id="logo" href="index.html"><img src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a></li>
                 <li><a class="active" href="cabinet.html">le cabinet</a> </li>
                 <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
                 <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
@@ -49,14 +49,14 @@
     </header>
 
     <!--**** MAIN CONTENT ****-->
-    <main id="cabinet">
+    <main>
 
         <!--**** PRESENTATION ****-->
         <section>
 
-            <h2>Le cabinet</h2>
+            <h1>Le cabinet</h1>
 
-            <img class="fadeIn" src="img/laetitia-cros-avocat-a-la-cour.jpg" alt="photo de Laetitia CROS, avocat à la cour">
+            <img class="fadeIn" src="img/laetitia-cros-avocat-a-la-cour.jpg" alt="photo de Laetitia CROS, avocat à la cour" style="filter: none;">
 
             <p>
                 Diplômée de la prestigieuse université de droit PARIS I- PANTHEON SORBONNE, Maître Laetitia CROS a prêté serment en 2011 auprès de la Cour d’appel de PARIS.
@@ -75,7 +75,7 @@
             </p>
 
             <p>
-                <i>En droit de la santé</i>, Maître Laetitia CROS est titulaire d’un Diplôme Universitaire (D.U) en réparation de préjudice corporel obtenu auprès de la faculté de médecine LYON I, gage de compétences pointues et reconnues dans ce domaine.
+                <b><i>En droit de la santé</i></b>, Maître Laetitia CROS est titulaire d’un Diplôme Universitaire (D.U) en réparation de préjudice corporel obtenu auprès de la faculté de médecine LYON I, gage de compétences pointues et reconnues dans ce domaine.
             </p>
 
             <p>
@@ -87,7 +87,7 @@
             </p>
 
             <p>
-                <b>En droit de la famille</b>, Maître Laetitia CROS s’est récemment formée au processus de droit collaboratif, mode alternatif de résolution des conflits, afin de répondre au mieux aux besoins et attentes de ses clients. 
+                <b><i>En droit de la famille</i></b>, Maître Laetitia CROS s’est récemment formée au processus de droit collaboratif, mode alternatif de résolution des conflits, afin de répondre au mieux aux besoins et attentes de ses clients. 
             </p>
 
             <p>
@@ -131,8 +131,31 @@
 
     </main>
 
-    <!--**** FOOTER ****-->
     <footer>
+
+        <nav>
+
+            <a class="logo-footer" href="/">
+
+                <img src="img/loading2.png" alt="laetitia cros - Avocat à la cour logo">
+
+                <span>Laetitia Cros</span>
+                <span>Avocat à la Cour</span>
+                
+            </a>
+            
+            <ul>                
+                <li><a href="cabinet.html">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
+                <li><a href="honoraires.html">honoraires</a> </li>
+                <li><a href="contact.html">contact</a> </li>
+                <li>﹏﹏﹏﹏</li>
+                <li>© <span id="year"></span> | Site par <a href="https://fsimitchiev.com/webcreatif" target="_blank">François Simitchiev</a></li>
+            </ul>
+
+        </nav>        
+
     </footer>
 
 <!--**** SCRIPTS ****-->
@@ -149,6 +172,13 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 });
 </script>
 
+<!-- Current year -->
+<script>
+    var date = new Date();
+    var year = date.getFullYear();
+    $("#year").html(year);
+    
+</script>
 
 </body>
 </html>

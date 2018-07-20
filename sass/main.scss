@@ -8,13 +8,13 @@
 @import "partials/footer";
 
 html, body {
-  max-width: 1280px;
+  // max-width: 1280px;
   margin: auto;
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+  line-height: 1.5;
+  letter-spacing: .5px!important;
   font-family: $mainFont;
 }
 
@@ -22,22 +22,21 @@ a {
   color: inherit;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-
-  -webkit-transition: all 400ms ease-in;
   -moz-transition: all 400ms ease-in;
   -ms-transition: all 400ms ease-in;
   -o-transition: all 400ms ease-in;
   transition: all 400ms ease-in;
-
   &:hover {
     border-bottom: 1px solid $mainColor;
   }
 }
 nav a:hover {
-  border-bottom: 1px solid $navColor;
+  background: $navColor;
+  color: white;
 }
 a.active {
-  border-bottom: 1px solid $navColor;
+  background: $navColor;
+  color: white;
 }
 
 ul {
@@ -59,8 +58,11 @@ h4 {
     text-transform: none;
   }
 }
-h2, h3 {
+h1, h2, h3, h4, h5 {
   color: $navColor;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 main {
@@ -70,7 +72,7 @@ main {
     display: block;
     margin: 0 auto 5%;
     text-align: justify;
-    color: $mainColor;
+    color: $navColor;
     img {
       width: 50%;
       padding-top: 10px;
@@ -84,12 +86,14 @@ main {
         filter: grayscale(0%);
       }
     }
+    h1 {
+      font-size: 3rem;
+    }
     h2 {
       font-size: 2rem;
       margin-top: 60px;
     }
-    p {
-      // width: 50%;
+    p, ul {
       i {
         color: $navColor;
         font-weight: bold;
