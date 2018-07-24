@@ -37,6 +37,11 @@ nav a:hover {
 a.active {
   background: $navColor;
   color: white;
+  @media all and (max-width: 767px) {
+    background: white;
+    color: $navColor;
+    padding: 5px;
+  }
 }
 
 ul {
@@ -63,6 +68,12 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+#carousel {
+  @media all and (max-width: 767px) {
+    display: none;
+  }
 }
 
 main {

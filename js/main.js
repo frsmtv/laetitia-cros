@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    // Mobile menu toggle 
+    $('.mob-menu-toggle').click(function(){
+        $('#mob-nav').toggleClass('menu-open');
+    });
+
    // **** CAROUSEL ****
     $('.carousel').slick({
         autoplay: true,
