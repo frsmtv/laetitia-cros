@@ -27,13 +27,17 @@
   p {
     i {
       color: inherit;
-    }
+      font-weight: lighter!important;
+    }    
   }
   ul {
     margin: 0;
     li {
       display: list-item;
       margin: 20px 0;
+      b {
+        font-weight: lighter;
+      }
       &:before {
         content: "● ";
       }
