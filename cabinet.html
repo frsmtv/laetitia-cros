@@ -36,12 +36,12 @@
         <nav id="main-nav">
 
             <ul>
-                <li><a id="logo" href="index.html"><img src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a></li>
-                <li><a class="active" href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a href="contact.html">contact</a> </li>
+                <li><a id="logo" href="index"><img src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a></li>
+                <li><a class="active" href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a href="contact">contact</a> </li>
             </ul>
 
         </nav>
@@ -53,12 +53,12 @@
             <img src="img/mob-menu-close.png" alt="Icone fermeture menu" class="mob-menu-toggle">
             
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a class="active" href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a href="contact.html">contact</a> </li>
+                <li><a href="cabinet">Accueil</a></li>
+                <li><a class="active" href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a href="contact">contact</a> </li>
             </ul>
 
         </nav>
@@ -73,7 +73,7 @@
 
             <h1>Le cabinet</h1>
 
-            <img class="fadeIn" src="img/laetitia-cros-avocat-a-la-cour.jpg" alt="photo de Laetitia CROS, avocat à la cour" style="filter: none;">
+            <img class="fadeIn" id="laetitia-cros-avocat-a-la-cour" src="img/laetitia-cros-avocat-a-la-cour.jpg" alt="photo de Laetitia CROS, avocat à la cour" style="filter: none;">
 
             <p>
                 Diplômée de l'Université de droit PARIS I- PANTHEON SORBONNE, Maître Laetitia CROS a prêté serment en 2011 auprès de la Cour d’appel de PARIS.
@@ -122,7 +122,8 @@
             </p>
 
             <p>
-                Ses compétences, son écoute et son humanisme, sont les véritables atouts de son cabinet.
+                Ses compétences, son écoute et son humanisme, <br>
+                sont les véritables atouts de son cabinet.
             </p>
 
             <h2>Publications </h2>
@@ -158,11 +159,11 @@
             </a>
             
             <ul>                
-                <li><a href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a href="contact.html">contact</a> </li>
+                <li><a href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a href="contact">contact</a> </li>
                 <li>﹏﹏﹏﹏</li>
                 <li>© <span id="year"></span> | Site par <a href="https://fsimitchiev.com/webcreatif" target="_blank">François Simitchiev</a></li>
             </ul>
@@ -189,7 +190,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 <script>
     var date = new Date();
     var year = date.getFullYear();
-    $("#year").html(year);
+    $("#year")(year);
     
 </script>
 

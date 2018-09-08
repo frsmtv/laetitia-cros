@@ -37,12 +37,12 @@
         <nav id="main-nav">
 
             <ul>
-                <li><a href="index.html"><img id="logo" src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a>  </li>
-                <li><a href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a class="active" href="contact.html">contact</a> </li>
+                <li><a href="cabinet"><img id="logo" src="img/laetitia-cros-logo-notext.png" alt="laetitia cros - logo"></a>  </li>
+                <li><a href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a class="active" href="contact">contact</a> </li>
             </ul>
 
         </nav>
@@ -54,12 +54,12 @@
             <img src="img/mob-menu-close.png" alt="Icone fermeture menu" class="mob-menu-toggle">
             
             <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a class="active" href="contact.html">contact</a> </li>
+                <li><a href="cabinet">Accueil</a></li>
+                <li><a href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a class="active" href="contact">contact</a> </li>
             </ul>
 
         </nav>
@@ -71,8 +71,7 @@
 
         <section id="contact">
 
-            <h3>Laetitia Cros</h3>
-            <h4>Avocat à la Cour</h4>
+            <h4>Coordonnées</h4>
             <ul>
                 <li>74 rue Ney - 69006 LYON</li>
                 <li>Téléphone: 06.63.58.46.75 | Fax: 04.84.35.21.82</li>
@@ -80,8 +79,17 @@
             </ul>
 
             <!--**** HORAIRES ****-->
-            <h4>Horaires d'ouverture du cabinet :<br>
-                <span>du lundi au vendredi de 9H30 à 18H30</span></h4>
+            <h4>Horaires d'ouverture</h4>
+            <span>du lundi au vendredi de 9H30 à 18H30 <br>
+            Uniquement sur rendez-vous.</span></h4>
+
+            <h4>Infos pratiques</h4>
+            <span>
+                Métro : Ligne B station Brotteaux ou Ligne A station Masséna <br>
+                T1, arrêt Brotteaux - C3 arrêt Part-Dieu <br>
+                Parking : Brotteaux, Place Jules Ferry, Lyon 69006
+            </span>
+
 
 
             <!--**** MAP ****-->
@@ -107,11 +115,11 @@
             </a>
             
             <ul>                
-                <li><a href="cabinet.html">le cabinet</a> </li>
-                <li><a href="droit-de-la-famille.html">droit de la famille</a> </li>
-                <li><a href="droit-de-la-sante.html">droit de la santé</a> </li>
-                <li><a href="honoraires.html">honoraires</a> </li>
-                <li><a href="contact.html">contact</a> </li>
+                <li><a href="cabinet">le cabinet</a> </li>
+                <li><a href="droit-de-la-famille">droit de la famille</a> </li>
+                <li><a href="droit-de-la-sante">droit de la santé</a> </li>
+                <li><a href="honoraires">honoraires</a> </li>
+                <li><a href="contact">contact</a> </li>
                 <li>﹏﹏﹏﹏</li>
                 <li>© <span id="year"></span> | Site par <a href="https://fsimitchiev.com/webcreatif" target="_blank">François Simitchiev</a></li>
             </ul>
@@ -138,7 +146,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 <script>
     var date = new Date();
     var year = date.getFullYear();
-    $("#year").html(year);
+    $("#year")(year);
     
 </script>
 
@@ -146,7 +154,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
 <script>
     var date = new Date();
     var year = date.getFullYear();
-    $("#year").html(year);
+    $("#year")(year);
     
 </script>
 

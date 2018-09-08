@@ -25,13 +25,15 @@ header {
       font-size: .8rem;
       letter-spacing: 2px;
       color: $navColor;
+      li:first-child a {
+        border-bottom: 0px transparent;
+      }
       a {
         padding: 5px;
         padding-bottom: 15px;
       }
       #logo {
         width: 80px;
-        border-bottom: none;
         -webkit-transition: all 400ms ease-in;
         -moz-transition: all 400ms ease-in;
         -ms-transition: all 400ms ease-in;
